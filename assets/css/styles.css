@@ -154,6 +154,7 @@ header {
   width: 100%;
   height: var(--header-height);
   z-index: var(--z-fixed);
+  padding: 1rem;
 }
 
 .nav__container {
@@ -266,6 +267,7 @@ header {
 /*=============== HOME ===============*/
 .home__container {
   position: relative;
+  padding-block: 5rem;
 }
 
 .home__img {
@@ -348,6 +350,7 @@ header {
   width: 35%;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .social__icon {
@@ -701,6 +704,9 @@ html::-webkit-scrollbar-thumb:hover {
 }
 /* For large devices */
 @media screen and (min-width:1150px) {
+  body{
+    max-width: 100%;
+  }
   .header {
     display: flex;
     align-items: center;
@@ -753,7 +759,7 @@ html::-webkit-scrollbar-thumb:hover {
   .service__content {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: repeat(3, 400px);
     padding: 0 1rem;
   }
   .skill__container {
@@ -780,9 +786,5 @@ html::-webkit-scrollbar-thumb:hover {
 @media screen and (min-width: 2048px) {
   body {
     zoom: 1.7;
-  }
-  .service__content {
-    grid-template-columns: repeat(3, 400px);
-    
   }
 }
