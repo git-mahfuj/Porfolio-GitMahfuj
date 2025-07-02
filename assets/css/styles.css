@@ -760,11 +760,11 @@ html::-webkit-scrollbar-thumb:hover {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, 400px);
-    padding: 0 1rem;
   }
   .skill__container {
-    width: 100%;
-    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 4rem;
   }
   .contact__container {
     display: grid;
@@ -775,10 +775,11 @@ html::-webkit-scrollbar-thumb:hover {
     width: 400px;
   }
   .footer__content {
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
+    padding-left: 3rem;
   }
 }
 
@@ -786,5 +787,6 @@ html::-webkit-scrollbar-thumb:hover {
 @media screen and (min-width: 2048px) {
   body {
     zoom: 1.7;
+    max-width: 100%;
   }
 }
